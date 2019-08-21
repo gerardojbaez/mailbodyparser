@@ -52,13 +52,13 @@ class ForwardParserTest extends TestCase
     public function forwards()
     {
         return [
-            ['gmail_spanish', 'Jane Doe', 'janedoe@gmail.com', '', 'jim@doe.org', 'E-mail subject'],
-            ['gmail_spanish_missing_from_name', null, 'janedoe@gmail.com', '', 'jim@doe.org', 'E-mail subject'],
-            ['gmail_english', 'Jane Doe', 'janedoe@gmail.com', '', 'jim@doe.org', 'E-mail subject'],
-            ['gmail_french', 'Jane Doe', 'janedoe@gmail.com', '', 'jim@doe.org', 'E-mail subject'],
-            ['zoho_english', 'Jane Doe', 'janedoe@gmail.com', '', 'jim@doe.org', 'E-mail subject'],
-            ['zoho_english_extra_end_spaces', 'Jane Doe', 'janedoe@gmail.com', '', 'jim@doe.org', 'E-mail subject'],
-            ['iphone_mail_english', 'Jane Doe', 'janedoe@gmail.com', 'Jim Doe', 'jim@doe.org', '[AcmeLLC] A new public key was added to your account'],
+            ['plain_gmail_spanish', 'Jane Doe', 'janedoe@gmail.com', '', 'jim@doe.org', 'E-mail subject'],
+            ['plain_gmail_spanish_missing_from_name', null, 'janedoe@gmail.com', '', 'jim@doe.org', 'E-mail subject'],
+            ['plain_gmail_english', 'Jane Doe', 'janedoe@gmail.com', '', 'jim@doe.org', 'E-mail subject'],
+            ['plain_gmail_french', 'Jane Doe', 'janedoe@gmail.com', '', 'jim@doe.org', 'E-mail subject'],
+            ['plain_zoho_english', 'Jane Doe', 'janedoe@gmail.com', '', 'jim@doe.org', 'E-mail subject'],
+            ['plain_zoho_english_extra_end_spaces', 'Jane Doe', 'janedoe@gmail.com', '', 'jim@doe.org', 'E-mail subject'],
+            ['plain_iphone_mail_english', 'Jane Doe', 'janedoe@gmail.com', 'Jim Doe', 'jim@doe.org', '[AcmeLLC] A new public key was added to your account'],
         ];
     }
 
