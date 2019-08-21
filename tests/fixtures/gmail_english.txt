@@ -1,0 +1,12 @@
+---------- Forwarded message ---------
+From: Jane Doe <janedoe@gmail.com>
+Date: mar., 20 ago. 2019 a las 15:50
+Subject: E-mail subject
+To: <jim@doe.org>
+
+
+Saludos,
+
+Probando el forwarding.
+
+Jane Doe
