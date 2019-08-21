@@ -1,6 +1,6 @@
 # E-Mail Body Parser
 
-## TD;LR
+## TL;DR
 
 ```php
 use Gerardojbaez\MailBodyParser\Parsers\ForwardParser;
