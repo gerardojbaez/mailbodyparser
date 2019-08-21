@@ -19,11 +19,10 @@ class ForwardParser
         }
 
         foreach (explode("\n", $content) as $line) {
-            if (empty($line)) {
-                continue;
-            }
+            $line = trim($line);
 
-            if ($this->extractPart('from', $forward, $line) or 
+            if (empty($line) or
+                $this->extractPart('from', $forward, $line) or 
                 $this->extractPart('to', $forward, $line) or
                 $this->extractSubject($forward, $line)
             ) {

@@ -1,0 +1,17 @@
+============ Forwarded message ============
+From: Jane Doe <janedoe@gmail.com> 
+To: <jim@doe.org> 
+Date: Tue, 20 Aug 2019 15:50:28 -0400 
+Subject: E-mail subject   
+============ Forwarded message ============
+
+
+Saludos,
+
+
+
+Probando el forwarding.
+
+
+
+Jane Doe
