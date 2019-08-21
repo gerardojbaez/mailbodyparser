@@ -58,7 +58,7 @@ class ForwardParserTest extends TestCase
             ['gmail_french', 'Jane Doe', 'janedoe@gmail.com', '', 'jim@doe.org', 'E-mail subject'],
             ['zoho_english', 'Jane Doe', 'janedoe@gmail.com', '', 'jim@doe.org', 'E-mail subject'],
             ['zoho_english_extra_end_spaces', 'Jane Doe', 'janedoe@gmail.com', '', 'jim@doe.org', 'E-mail subject'],
-            ['gmail_english_iphone', 'Jane Doe', 'janedoe@gmail.com', 'Jim Doe', 'jim@doe.org', '[AcmeLLC] A new public key was added to your account'],
+            ['iphone_mail_english', 'Jane Doe', 'janedoe@gmail.com', 'Jim Doe', 'jim@doe.org', '[AcmeLLC] A new public key was added to your account'],
         ];
     }
 
