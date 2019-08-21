@@ -1,0 +1,19 @@
+
+
+Sent from my iPhone
+
+Begin forwarded message:
+
+> From: Jane Doe <janedoe@gmail.com>
+> Date: August 21, 2019 at 1:52:00 AM AST
+> To: Jim Doe <jim@doe.org>
+> Subject: [AcmeLLC] A new public key was added to your account
+> 
+> The following SSH key was added to your account:
+> 
+> example.com
+> 
+> If you believe this key was added in error, you can remove the key and disable
+> access at the following location:
+> 
+> https://example.com/settings/keys

@@ -6,9 +6,9 @@ use Gerardojbaez\MailBodyParser\Forward;
 
 class ForwardParser
 {
-    protected $fromRegex = '/^(?:From|De):\s+["\']?(.*?)["\']?\s*(?:\[mailto:|<)?([^<>]*)(?:[\]>])?$/i';
-    protected $toRegex = '/^(?:To|For|Para|À):\s+["\']?(.*?)["\']?\s*(?:\[mailto:|<)?([^<>]*)(?:[\]>])?$/i';
-    protected $subjectRegex= '/^(?:Subject|Asunto|Assujettir|Sujet|Exposé):\s(.*)$/i';
+    protected $fromRegex = '/^(?:>\s)?(?:From|De):\s+["\']?(.*?)["\']?\s*(?:\[mailto:|<)?([^<>]*)(?:[\]>])?$/i';
+    protected $toRegex = '/^(?:>\s)?(?:To|For|Para|À):\s+["\']?(.*?)["\']?\s*(?:\[mailto:|<)?([^<>]*)(?:[\]>])?$/i';
+    protected $subjectRegex= '/^(?:>\s)?(?:Subject|Asunto|Assujettir|Sujet|Exposé):\s(.*)$/i';
 
     public function parse($content)
     {
