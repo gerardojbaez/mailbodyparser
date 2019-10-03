@@ -1,5 +1,12 @@
 # Change Log
 
+## [0.1.2] - 2019-10-02
+
+### Fixed
+
+- Not removing \r from the end.
+- Not removing mailto: from email addresses.
+
 ## [0.1.1] - 2019-21-05
 
 ### Fixed

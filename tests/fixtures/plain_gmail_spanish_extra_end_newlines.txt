@@ -1,0 +1,18 @@
+\r
+\r
+---------- Forwarded message ---------\r
+De: Jane Doe <janedoe@gmail.com>\r
+Date: mié., 21 ago. 2019 a las 1:52\r
+Subject: [AcmeLLC] A new public key was added to your account\r
+To: <jim@doe.org>\r
+\r
+\r
+The following SSH key was added to your account:\r
+\r
+example.com\r
+\r
+If you believe this key was added in error, you can remove the key and\r
+disable\r
+access at the following location:\r
+\r
+https://example.com/settings/keys\r

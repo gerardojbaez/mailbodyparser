@@ -6,9 +6,9 @@ use Gerardojbaez\MailBodyParser\Forward;
 
 class ForwardParser
 {
-    protected $fromRegex = '/^(?:>\s)?(?:From|De):\s+["\']?(.*?)["\']?\s*(?:\[mailto:|<)?([^<>]*)(?:[\]>])?$/i';
-    protected $toRegex = '/^(?:>\s)?(?:To|For|Para|À):\s+["\']?(.*?)["\']?\s*(?:\[mailto:|<)?([^<>]*)(?:[\]>])?$/i';
-    protected $subjectRegex= '/^(?:>\s)?(?:Subject|Asunto|Assujettir|Sujet|Exposé):\s(.*)$/i';
+    protected $fromRegex = '/^(?:>\s)?(?:From|De):\s+["\']?(.*?)["\']?\s*(?:\[mailto:|<)?([^<>]*)(?:[\]>])?(?:\\\r)?$/i';
+    protected $toRegex = '/^(?:>\s)?(?:To|For|Para|À):\s+["\']?(.*?)["\']?\s*(?:\[mailto:|<)?([^<>]*)(?:[\]>])?(?:\\\r)?$/i';
+    protected $subjectRegex= '/^(?:>\s)?(?:Subject|Asunto|Assujettir|Sujet|Exposé):\s([^\\\]*)(?:\\\r)?$/i';
 
     public function parse($content)
     {
@@ -35,6 +35,11 @@ class ForwardParser
 
     protected function extractPart($part, &$forward, $line)
     {
+        // Convert mailto:jane@example.org into jane@example.org
+        if (in_array($part, ['from', 'to'])) {
+            $line = str_replace('mailto:', '', $line);
+        }
+
         preg_match($this->{"{$part}Regex"}, $line, $matches);
         
         $part = ucfirst($part);
